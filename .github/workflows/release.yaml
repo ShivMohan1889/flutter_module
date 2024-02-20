@@ -28,7 +28,7 @@ jobs:
       - name: Check a new tag
         id: tag
         run: |
-          export TAG_VERSION=8
+          export TAG_VERSION=9
           echo "version=$TAG_VERSION" >> $GITHUB_OUTPUT
           echo $TAG_VERSION
           git tag $TAG_VERSION
