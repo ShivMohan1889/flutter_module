@@ -28,7 +28,7 @@ jobs:
       - name: Check a new tag
         id: tag
         run: |
-          export TAG_VERSION=5
+          export TAG_VERSION=6
           echo "version=$TAG_VERSION" >> $GITHUB_OUTPUT
           echo $TAG_VERSION
           git tag $TAG_VERSION
@@ -62,8 +62,7 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
-      - name:  'Rosseta'
-        run: softwareupdate --install-rosetta
+
       - name: 'Flutter pub get'
         run: |
           flutter pub get
