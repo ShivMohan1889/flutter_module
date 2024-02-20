@@ -27,7 +27,7 @@ jobs:
       - name: Check a new tag
         id: tag
         run: |
-          export TAG_VERSION=$(grep version pubspec.yaml |  awk -F  ': ' '{print $2}')
+          export TAG_VERSION=1 
           echo "version=$TAG_VERSION" >> $GITHUB_OUTPUT
           echo $TAG_VERSION
           echo ${{ steps.tag.outputs.version }}
