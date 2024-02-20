@@ -41,7 +41,7 @@ jobs:
 
   xcframeworks:
     # if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'release/')
-    runs-on: macos-latest
+    runs-on: macos-13-xlarge
     needs: release
     steps:
       - name: "Checkout TIKI SDK Flutter"
