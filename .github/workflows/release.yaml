@@ -1,11 +1,11 @@
 name: Publish
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
+    # types:
+    #   - closed
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
