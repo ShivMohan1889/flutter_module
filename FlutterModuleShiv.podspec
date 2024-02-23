@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'FlutterModuleShiv'
     s.module_name      = 'FlutterModuleShiv'
-    s.version          = '1.0.1'
+    s.version          = '2.0.0'
     s.summary          = 'Your Pod Summary'
     s.description      = 'Your Pod Description'
     s.homepage         = 'https://github.com/ShivMohan1889/flutter_module'
